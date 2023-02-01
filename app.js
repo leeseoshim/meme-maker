@@ -5,6 +5,7 @@ const colorOptions = Array.from(
   document.getElementsByClassName("color-option")
 );
 const modeBtn = document.getElementById("mode-btn");
+
 const context = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 800;
