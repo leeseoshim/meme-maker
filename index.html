@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas></canvas>
-    <input id="line-width" type="range" min="1" max="10" value="5" step="0.5" />
-    <input id="color" type="color" />
-    <div>
+    <div class="color-options">
+      <input id="color" type="color" />
       <div
         class="color-option"
         style="background-color: #1abc9c"
@@ -48,8 +46,31 @@
         data-color="#e74c3c"
       ></div>
     </div>
-    <button id="mode-btn">Fill</button>
-
+    <canvas></canvas>
+    <div class="btns">
+      <label for="line-width"></label>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+      <button id="mode-btn">채우기</button>
+      <button id="destroy-btn">삭제</button>
+      <button id="eraser-btn">지우기</button>
+      <label for="file">
+        이미지 추가
+        <input type="file" accept="image/*" id="file" />
+      </label>
+      <input
+        type="text"
+        placeholder="입력 후 원하는 부분에 더블클릭해주세요."
+        id="text"
+      />
+      <button id="save">저장</button>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
